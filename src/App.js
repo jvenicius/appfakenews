@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./global.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Cabecalho from "./components/Cabecalho";
+
+import Home from "./pages/Home"
+import RotaA from "./pages/RotaA"
+import RotaB from "./pages/RotaB"
+import RotaC from "./pages/RotaC"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Primeiro Commit do App Fake News!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Cabecalho />
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/rotaa" element={<RotaA />} />
+        <Route path="/rotab" element={<RotaB />} />
+        <Route path="/rotab/:id" element={<RotaB />} />
+        <Route path="/rotac" element={<RotaC />} />
+        <Route path="*" element={<RotaC />} />
+      </Routes>
+    </Router>
   );
 }
 
