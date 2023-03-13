@@ -16,7 +16,7 @@ const RotaA = () => {
     title: 'Refletindo sobre sua resposta...',
     description: 'Se a informação disseminada não possui nenhuma parte falsa, o que a tornaria uma fake news? Pense mais um pouco e tente novamente.'
   };
-  const feedBackB = `Parabéns! Você acertou!
+  const feedBackB = `Parabéns! Você acertou!xx
   Independentemente do tamanho da informação disseminada, um elemento falso é suficiente
   para que ela seja considerada uma fake news.`;
   const feedBackC = `Refletindo sobre a sua resposta...
