@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Caixa = styled.div`
-  background-color: #eee;
+  background-color: #fff;
+  border: 1px solid black;
   border-radius: 10px;
   padding: 1.5rem;
   margin-top: 6%;
@@ -30,4 +31,4 @@ export const CampoDosBotoes = styled.div`
   margin-top: 2%;
 `;
 
-export const styleButton = { borderColor: "#0BB5DE", color: '#000' };
+export const styleButton = { borderColor: "#000", color: "#000" };

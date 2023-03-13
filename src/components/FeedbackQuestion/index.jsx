@@ -5,7 +5,8 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
-const FeedbackQuestion = ({ open, handleClose, dialogText }) => {
+const FeedbackQuestion = ({ open, handleClose, dialogText, buttonText }) => {
+  const buttonContent = buttonText === undefined ? 'Tentar novamente!' : buttonText;
   return (
     <div>
       <Dialog
@@ -27,7 +28,7 @@ const FeedbackQuestion = ({ open, handleClose, dialogText }) => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} autoFocus>
-            Tentar novamente!
+            {buttonContent}
           </Button>
         </DialogActions>
       </Dialog>
